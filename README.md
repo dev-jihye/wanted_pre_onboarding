@@ -2,6 +2,7 @@
 
 원티드 프리온보딩 코스 과제 내용입니다.
 HTML5, CSS, tailwindcss, Javascript, React를 통해 구현했습니다.
+[demo](https://dev-jihye.github.io/wanted_pre_onboarding/)
 
 ## Toggle
 
