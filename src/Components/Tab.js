@@ -6,7 +6,6 @@ export default function Tab({ tabs, active, setActive }) {
           <button
             type="button"
             key={tab.name}
-            active={active && tab.content}
             onClick={() => setActive(tab.content)}
             className={`py-4 w-1/3 text-lg ${
               active === tab.content

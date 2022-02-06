@@ -1,10 +1,9 @@
-import Toggle from "./Component/Toggle";
-import "./App.css";
-import Modal from "./Component/Modal";
-import Tab from "./Component/Tab";
-import Tag from "./Component/Tag";
-import AutoComplete from "./Component/AutoComplete";
-import ClickToEdit from "./Component/ClickToEdit";
+import Toggle from "./Components/Toggle";
+import Modal from "./Components/Modal";
+import Tab from "./Components/Tab";
+import Tag from "./Components/Tag";
+import AutoComplete from "./Components/AutoComplete";
+import ClickToEdit from "./Components/ClickToEdit";
 import { useState } from "react";
 
 function App() {
@@ -114,6 +113,7 @@ function App() {
         <h2 className="text-xl font-bold mb-4">Auto complete</h2>
         <AutoComplete words={words} text={text} setText={setText} />
       </div>
+
       <div className="my-10 mx-5">
         <h2 className="text-xl font-bold mb-4">Click to Edit</h2>
         <div className="my-2">

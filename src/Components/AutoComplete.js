@@ -13,14 +13,12 @@ export default function AutoComplete({ words, text, setText }) {
   useEffect(() => {
     let suggestions = [];
     if (text.trim()) {
-      const regex = new RegExp(`^${text}`, "i");
+      const regex = new RegExp(`^${text.trim()}`, "i");
       suggestions = words.sort().filter((v) => regex.test(v));
       setSearched(suggestions);
     } else {
       setSearched([]);
     }
-    //text가 바뀔 때마다 useEffect가 적용되서 word를
-    //onClick했을 때 setSearched([])가 바로 실행되지 않음
   }, [text]);
 
   const onClick = (word) => {
